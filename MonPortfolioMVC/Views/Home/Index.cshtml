@@ -1,8 +1,94 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Mon portfolio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<article>
+    <section>
+        <h1>Bonjour, je suis <br /> <b>Thomas BUREAU DU COLOMBIER</b></h1>
+        <span>Voici mon portfolio, réalisé en ASP.NET CORE</span>
+    </section>
+</article>
+
+<hr />
+
+<article>
+    <section>
+        <h2>Qui suis-je ?</h2>
+        <img style="max-width:100px;"  src="~/img/sleppMan.png" />
+        <p>
+            Ayant commencé ma vie professionnelle en 2017, j'ai eu la chance de travailler en tant que développeur sur des projets conséquents, mais aussi de m'occuper aussi de leurs gestion. De la récupération du besoin avec le client jusqu'au développement, aborder toutes les étapes de création est ce qui rends ce métier exceptionnel pour moi. Techniquement, j'aime apprendre et je n'ai pas froids aux yeux, donc j'espère réduire au maximum ma marge de progression.
+        </p>
+    </section>
+</article>
+
+<hr />
+
+<article>
+    <h2>Vous avez forcément besoin de moi</h2>
+    <i>(enfin c'est ce que ma mère me dit)</i>
+
+    <h3>Je suis à la recherche de :</h3>
+    <section>
+        <h4>Un stage</h4>
+        <img style="max-width:100px;" src="~/img/contactMan.png" />
+        <p>La description de votre stage</p>
+
+    </section>
+    <section>
+        <h4>Un emploi de rêve</h4>
+        <img style="max-width:100px;" src="~/img/sportMan.png" />
+
+        <p>La description de votre emploi de rêve</p>
+
+    </section>
+    <section>
+        <div>
+            <h4>Un patron de rêve</h4>
+            <i>(c'est pour vous accorder avec votre stagiaire de rêve)</i>
+        </div>
+        <img style="max-width:100px;" src="~/img/codeur.png" />
+        <p>Je crois que c'est vous non ?</p>
+    </section>
+</article>
+
+<hr />
+
+<article>
+    <h2>Mon expérience</h2>
+    <ul>
+        <li>
+            Emploi fictif
+        </li>
+        <li>
+            Emploi
+        </li>
+        <li>
+            Stage fictif
+        </li>
+        <li>
+            Stage
+        </li>
+    </ul>
+</article>
+
+<hr/>
+
+<article>
+    <h2>Contact</h2>
+
+    <form action="/Home/EnvoyerMail" method="post">
+        <label for="nom">Merci de me donner votre nom</label><br />
+        <input id="nom" type="text" placeholder="Votre nom" />
+        <br />
+
+        <label for="mail">Merci de me donner votre mail</label><br />
+        <input id="mail" type="email" placeholder="ex : mail@gmail.com" />
+        <br />
+
+        <label for="message">Quel est votre message ?</label><br />
+        <textarea maxlength="100" id="message" type="email" placeholder="Votre message"></textarea>
+        <br />
+        <input type="submit" value="Envoyer"/>
+    </form>
+
+</article>
