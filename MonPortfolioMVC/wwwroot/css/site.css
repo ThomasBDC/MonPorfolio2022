@@ -105,6 +105,20 @@ article{
 .flexible-center {
     display: flex;
     justify-content: space-evenly;
+
+}
+
+
+@media (max-width: 750px) {
+    .flexible-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dark .flexible-center section {
+        width:400px;
+        max-width:90%;
+    }
 }
 
     .flexible-center section {
@@ -118,6 +132,8 @@ article{
     margin-bottom: 35px;
     background: linear-gradient(#5e5e5e, #272727);
     color: white;
+    flex: 1;
+    margin: 15px;
 }
 
 .light .flexible-center section {
@@ -150,4 +166,26 @@ section {
 
 .secondTitre{
     margin-top:30px;
+}
+
+.form-field{
+    margin: 15px;
+}
+
+.form-field label{
+    display:block;
+}
+
+    .form-field input, .form-field textarea {
+        width: 16em;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+.bouton-portfolio {
+    background-color: #bb5205;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }

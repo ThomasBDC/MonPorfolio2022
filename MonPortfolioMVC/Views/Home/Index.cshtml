@@ -79,18 +79,21 @@
     <h2>Contact</h2>
 
     <form action="/Home/EnvoyerMail" method="post">
-        <label for="nom">Merci de me donner votre nom</label><br />
-        <input id="nom" type="text" placeholder="Votre nom" />
-        <br />
-
-        <label for="mail">Merci de me donner votre mail</label><br />
-        <input id="mail" type="email" placeholder="ex : mail@gmail.com" />
-        <br />
-
-        <label for="message">Quel est votre message ?</label><br />
-        <textarea maxlength="100" id="message" type="email" placeholder="Votre message"></textarea>
-        <br />
-        <input type="submit" value="Envoyer"/>
+        <div class="form-field">
+            <label for="nom">Merci de me donner votre nom</label>
+            <input id="nom" type="text" placeholder="Votre nom" />
+        </div>
+        <div class="form-field">
+            <label for="mail">Merci de me donner votre mail</label>
+            <input id="mail" type="email" placeholder="ex : mail@gmail.com" />
+        </div>
+        <div class="form-field">
+            <label for="message">Quel est votre message ?</label>
+            <textarea maxlength="100" id="message" type="email" placeholder="Votre message"></textarea>
+        </div>
+        <div class="form-field">
+            <input class="bouton-portfolio" type="submit" value="Envoyer"/>
+        </div>
     </form>
 
 </article>
